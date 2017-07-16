@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>SevenDad</title>
+  <title>MySQL 基础 | SevenDad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="测试小白的成长之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SevenDad">
-<meta property="og:url" content="http://sevendad.github.io/index.html">
+  <meta name="description" content="基本概念关系型数据库的基本概念关系： 一个关系对应通常说的一张表 元组： 表中的一行即为一个元组 属性： 表中的一列即为一个属性，给每一个属性起一个名称即属性名 域： 属性的取值范围 分量： 元组中的一个属性值 键： 由一个或几个属性组成，能够唯一标识元组      超键 (super key)：在关系中能唯一标识元组的属性集称为关系模式的超键      候选键 (candidate key)：不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL 基础">
+<meta property="og:url" content="http://sevendad.github.io/2017/07/16/MySQL/index.html">
 <meta property="og:site_name" content="SevenDad">
-<meta property="og:description" content="测试小白的成长之路">
+<meta property="og:description" content="基本概念关系型数据库的基本概念关系： 一个关系对应通常说的一张表 元组： 表中的一行即为一个元组 属性： 表中的一列即为一个属性，给每一个属性起一个名称即属性名 域： 属性的取值范围 分量： 元组中的一个属性值 键： 由一个或几个属性组成，能够唯一标识元组      超键 (super key)：在关系中能唯一标识元组的属性集称为关系模式的超键      候选键 (candidate key)：不">
+<meta property="og:updated_time" content="2017-07-16T04:45:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SevenDad">
-<meta name="twitter:description" content="测试小白的成长之路">
+<meta name="twitter:title" content="MySQL 基础">
+<meta name="twitter:description" content="基本概念关系型数据库的基本概念关系： 一个关系对应通常说的一张表 元组： 表中的一行即为一个元组 属性： 表中的一列即为一个属性，给每一个属性起一个名称即属性名 域： 属性的取值范围 分量： 元组中的一个属性值 键： 由一个或几个属性组成，能够唯一标识元组      超键 (super key)：在关系中能唯一标识元组的属性集称为关系模式的超键      候选键 (candidate key)：不">
   
     <link rel="alternate" href="/atom.xml" title="SevenDad" type="application/atom+xml">
   
@@ -62,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-MySQL" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-MySQL" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/16/MySQL/" class="article-date">
   <time datetime="2017-07-16T03:23:25.000Z" itemprop="datePublished">2017-07-16</time>
@@ -77,8 +76,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/16/MySQL/">MySQL 基础</a>
+    <h1 class="article-title" itemprop="name">
+      MySQL 基础
     </h1>
   
 
@@ -158,79 +157,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-buildblog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/16/buildblog/" class="article-date">
-  <time datetime="2017-07-16T02:42:16.000Z" itemprop="datePublished">2017-07-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/16/buildblog/">HEXO + GitHub 搭建博客</a>
-    </h1>
+    <a href="/2017/07/16/buildblog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">HEXO + GitHub 搭建博客</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>心血来潮，想把学习的经历都记录下来，也算是检验一下自己有没有学到东西。多年后，翻出博客，回顾一下，没有虚度时光，对于自己也算是一种成功吧。百度了一下各种博客，最后选了一个比较复杂的方式 HEXO + GitHub，人生在于折腾~~~<br>开始配置有点折腾，后期维护也挺简单的，支持 Markdown 格式，顺便学习一下 Markdown，一举多得！</p>
-<h2 id="HEXO-GitHub-搭建博客"><a href="#HEXO-GitHub-搭建博客" class="headerlink" title="HEXO + GitHub 搭建博客"></a>HEXO + GitHub 搭建博客</h2><h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a><br>作用：用来生成静态页面。</p>
-<h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p><a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>作用：把本地的 HEXO 内容提交到 Github 上去。</p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>Hexo 的介绍官网很详细：<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></p>
-<ol>
-<li><p>新建一个文件夹 Blog，用于存放 Hexo 配置文件，然后进入该文件夹</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /Users/xiaoqi/Blog</div><div class="line"><span class="built_in">cd</span> /Users/xiaoqi/Blog</div></pre></td></tr></table></figure>
-</li>
-<li><p>安装 Hexo：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
-</li>
-<li><p>初始化 Hexo：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
-</li>
-<li><p>启动 Hexo 服务：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>在浏览器中打开 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 可以看到 Hexo 页面就表示安装成功了</p>
-<h3 id="配置-GitHub"><a href="#配置-GitHub" class="headerlink" title="配置 GitHub"></a>配置 GitHub</h3><ol>
-<li>申请 GitHub 帐号，我的帐号是 sevendad</li>
-<li>建立 Repository，名称为 <strong>sevendad.github.io</strong></li>
-<li><p>将 Blog 目录下的 <strong>_config.yml</strong> 文件结尾更改为<br>deploy:<br>type: git<br>repository: <a href="https://github.com/sevendad/sevendad.github.io.git" target="_blank" rel="external">https://github.com/sevendad/sevendad.github.io.git</a><br>branch: master</p>
-</li>
-<li><p>然后执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>最后执行配置命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>在浏览器中打开 <a href="https://sevendad.github.io">https://sevendad.github.io</a> 就可以看到自己的博客页面了</p>
-<h3 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h3><p>每次部署的步骤，可按以下三步来进行。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://sevendad.github.io/2017/07/16/buildblog/" data-id="cj566mn5800011pxgwydqux1o" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
