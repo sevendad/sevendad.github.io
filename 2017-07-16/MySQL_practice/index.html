@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>SevenDad</title>
+  <title>MySQL 实战 | SevenDad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="测试小白的成长之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SevenDad">
-<meta property="og:url" content="http://sevendad.github.io/index.html">
+  <meta name="description" content="创建数据库 company_sale1CREATE DATABASE company_sale DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; 创建表员工表 emp：        empno，员工编号，主键        ename，员工姓名，不能为空        job，员工职位，不能为空        mgr，员工经理的编号">
+<meta name="keywords" content="MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL 实战">
+<meta property="og:url" content="http://sevendad.github.io/2017-07-16/MySQL_practice/index.html">
 <meta property="og:site_name" content="SevenDad">
-<meta property="og:description" content="测试小白的成长之路">
+<meta property="og:description" content="创建数据库 company_sale1CREATE DATABASE company_sale DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; 创建表员工表 emp：        empno，员工编号，主键        ename，员工姓名，不能为空        job，员工职位，不能为空        mgr，员工经理的编号">
+<meta property="og:updated_time" content="2017-07-16T07:32:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SevenDad">
-<meta name="twitter:description" content="测试小白的成长之路">
+<meta name="twitter:title" content="MySQL 实战">
+<meta name="twitter:description" content="创建数据库 company_sale1CREATE DATABASE company_sale DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; 创建表员工表 emp：        empno，员工编号，主键        ename，员工姓名，不能为空        job，员工职位，不能为空        mgr，员工经理的编号">
   
     <link rel="alternate" href="/atom.xml" title="SevenDad" type="application/atom+xml">
   
@@ -62,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-MySQL_practice" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-MySQL_practice" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017-07-16/MySQL_practice/" class="article-date">
   <time datetime="2017-07-16T06:36:05.000Z" itemprop="datePublished">2017-07-16</time>
@@ -77,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017-07-16/MySQL_practice/">MySQL 实战</a>
+    <h1 class="article-title" itemprop="name">
+      MySQL 实战
     </h1>
   
 
@@ -109,182 +109,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-MySQL" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017-07-16/MySQL/" class="article-date">
-  <time datetime="2017-07-16T03:23:25.000Z" itemprop="datePublished">2017-07-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017-07-16/MySQL/">MySQL 基础</a>
-    </h1>
+    <a href="/2017-07-16/MySQL/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">MySQL 基础</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="关系型数据库的基本概念"><a href="#关系型数据库的基本概念" class="headerlink" title="关系型数据库的基本概念"></a>关系型数据库的基本概念</h3><p><strong>关系：</strong> 一个关系对应通常说的一张表</p>
-<p><strong>元组：</strong> 表中的一行即为一个元组</p>
-<p><strong>属性：</strong> 表中的一列即为一个属性，给每一个属性起一个名称即属性名</p>
-<p><strong>域：</strong> 属性的取值范围</p>
-<p><strong>分量：</strong> 元组中的一个属性值</p>
-<p><strong>键：</strong> 由一个或几个属性组成，能够唯一标识元组<br>      超键 (super key)：在关系中能唯一标识元组的属性集称为关系模式的超键<br>      候选键 (candidate key)：不含有多余属性的超键称为候选键<br>      主键 (Key)：用户选作元组标识的一个候选键称为主键</p>
-<p><strong>外键：</strong> 设 F 是基本关系 R 的一个或一组属性， 但不是关系 R 的键。如果 F 与基本关系 S 的主键 Ks 相对应，则称 F 是基本关系 R 的外键 (Foreign Key)<br>基本关系 R 称为参照关系 (Referencing Relation)<br>基本关系 S 称为被参照关系 (Referenced Relation) 或目标关系 (Target Relation)。</p>
-<h3 id="关系模型中三类完整性约束"><a href="#关系模型中三类完整性约束" class="headerlink" title="关系模型中三类完整性约束"></a>关系模型中三类完整性约束</h3><p><strong>实体完整性</strong><br>主键不能为空，不能重复。</p>
-<p><strong>参照完整性</strong><br>外键要么为空，要么为参照的主属性的某个值</p>
-<p><strong>用户定义的完整性</strong><br>UNIQUE、NOT NULL、DEFAULT、AUTO_INCREAMENT 等</p>
-<h2 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h2><p>结构化查询语言 (Structured Query Language) 简称 SQL，是一种特殊目的的编程语言，是一种数据库查询和程序设计语言，用于存取数据以及查询、更新和管理关系数据库系统，同时也是数据库脚本文件的扩展名。</p>
-<p>编写规范</p>
-<ul>
-<li>SQL 语句的所有表名、字段名全部小写，系统保留字、内置函数名、SQL 保留字大写。</li>
-<li>连接符 or、in、and、以及 ＝、&lt;=、&gt;= 等前后加上一个空格。</li>
-<li>对较为复杂的 SQL 语句、过程、函数加上注释，说明算法、功能。</li>
-<li>多表连接时，使用表的别名来引用列</li>
-</ul>
-<h2 id="语言分类"><a href="#语言分类" class="headerlink" title="语言分类"></a>语言分类</h2><h3 id="数据定义语句-DDL"><a href="#数据定义语句-DDL" class="headerlink" title="数据定义语句 (DDL)"></a>数据定义语句 (DDL)</h3><ul>
-<li>create</li>
-</ul>
-<p>创建数据库<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#创建名为 dbname 的数据库，并指定默认字符集为 utf8</div><div class="line">CREATE DATABASE [IF NOT EXISTS] dbname [DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci];</div><div class="line"></div><div class="line">#显示所有数据库</div><div class="line">SHOW DATABASES;</div><div class="line"></div><div class="line">#切换到数据库 dbname</div><div class="line">USE dbname;</div></pre></td></tr></table></figure></p>
-<p>创建表<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">#创建名为 tbname 的表，指定各个属性的数据类型以及约束，最后指定表的字符集为 utf8</div><div class="line">CREATE TABLE tbname</div><div class="line">(</div><div class="line">id INT AUTO_INCREMENT PRIMARY KEY,</div><div class="line">NAME VARCHAR(20) NOT NULL,</div><div class="line">sex CHAR(4) NOT NULL,</div><div class="line">age INT(3),</div><div class="line">tel CHAR(11) DEFAULT '-'</div><div class="line">)ENGINE=INNODB DEFAULT CHARSET utf8;</div><div class="line"></div><div class="line">#查看表 tbname 的属性</div><div class="line">DESC tbname;</div></pre></td></tr></table></figure></p>
-<ul>
-<li>alter</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">#修改数据库默认字符集</div><div class="line">ALTER DATABASE dbname DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;</div><div class="line"></div><div class="line">#将表名 tbname 修改为 tb1</div><div class="line">ALTER TABLE tbname RENAME tb1;</div><div class="line"></div><div class="line">#将表 tb1 中的属性 tel 名称改为 telphone</div><div class="line">ALTER TABLE tb1 CHANGE tel telphone CHAR(11) DEFAULT '-';</div><div class="line"></div><div class="line">#将表 tb1 中的属性 age 数据类型修改为 int(2)</div><div class="line">ALTER TABLE tb1 MODIFY age INT(2);</div><div class="line"></div><div class="line">#添加属性 class</div><div class="line">ALTER TABLE tb1 ADD class INT(2) NOT NULL;</div><div class="line"></div><div class="line">#删除属性 class</div><div class="line">ALTER TABLE tb1 DROP class;</div><div class="line"></div><div class="line">#为属性 id 添加主键约束</div><div class="line">ALTER TABLE tb1 ADD CONSTRAINT PRIMARY KEY(id);</div><div class="line"></div><div class="line">#删除主键约束，在此之前先去掉 id 属性的 AUTO_INCREMENT 约束</div><div class="line">ALTER TABLE tb1 MODIFY id INT;</div><div class="line">ALTER TABLE tb1 DROP PRIMARY KEY;</div></pre></td></tr></table></figure>
-<ul>
-<li>drop</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#删除属性 class</div><div class="line">ALTER TABLE tb1 DROP class;</div><div class="line"></div><div class="line">#删除表 tb1</div><div class="line">DROP TABLE tb1;</div><div class="line"></div><div class="line">#删除数据库 dbname</div><div class="line">DROP DATABASE dbname;</div></pre></td></tr></table></figure>
-<ul>
-<li>rename</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#将表 tb1 重命名为 table1</div><div class="line">RENAME TABLE tb1 TO table1;</div></pre></td></tr></table></figure>
-<ul>
-<li>truncate</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
-<h3 id="数据操纵语句-DML"><a href="#数据操纵语句-DML" class="headerlink" title="数据操纵语句 (DML)"></a>数据操纵语句 (DML)</h3><ul>
-<li>insert</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> tb1 <span class="keyword">VALUES</span>(<span class="number">1</span>,<span class="string">'asan'</span>,<span class="string">'fmal'</span>,<span class="number">18</span>,<span class="string">'13911011011'</span>);</div><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> tb1(<span class="keyword">NAME</span>,sex,age) <span class="keyword">VALUES</span>(<span class="string">'zhangsan'</span>,<span class="string">'male'</span>,<span class="number">20</span>),(<span class="string">'lisi'</span>,<span class="string">'fema'</span>,<span class="number">19</span>),(<span class="string">'wangwu'</span>,<span class="string">'male'</span>,<span class="number">18</span>);</div></pre></td></tr></table></figure>
-<ul>
-<li>update</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">UPDATE</span> tb1 <span class="keyword">SET</span> telphone=<span class="string">'13111010011'</span> <span class="keyword">WHERE</span> <span class="keyword">id</span>=<span class="number">1</span>;</div><div class="line"><span class="keyword">UPDATE</span> tb1 <span class="keyword">SET</span> sex=<span class="string">'fema'</span>,telphone=<span class="string">'13222022022'</span> <span class="keyword">WHERE</span> <span class="keyword">id</span>=<span class="number">3</span>;</div></pre></td></tr></table></figure>
-<ul>
-<li>delete</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> tb1 <span class="keyword">WHERE</span> <span class="keyword">id</span>=<span class="number">3</span>;</div></pre></td></tr></table></figure>
-<h3 id="数据查询语句-DQL"><a href="#数据查询语句-DQL" class="headerlink" title="数据查询语句 (DQL)"></a>数据查询语句 (DQL)</h3><ul>
-<li>select</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> tb1</div></pre></td></tr></table></figure>
-<h3 id="事务控制语句-TC"><a href="#事务控制语句-TC" class="headerlink" title="事务控制语句 (TC)"></a>事务控制语句 (TC)</h3><ul>
-<li>commit</li>
-<li>rollback</li>
-<li>savepoint<h3 id="数据控制语言-DCL"><a href="#数据控制语言-DCL" class="headerlink" title="数据控制语言 (DCL)"></a>数据控制语言 (DCL)</h3></li>
-<li>grant</li>
-<li>revoke</li>
-</ul>
-<p>More information</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://sevendad.github.io/2017-07-16/MySQL/" data-id="cj56emxp200003dxg90651cs8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-buildblog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017-07-16/buildblog/" class="article-date">
-  <time datetime="2017-07-16T02:42:16.000Z" itemprop="datePublished">2017-07-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017-07-16/buildblog/">HEXO + GitHub 搭建博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>心血来潮，想把学习的经历都记录下来，也算是检验一下自己有没有学到东西。多年后，翻出博客，回顾一下，没有虚度时光，对于自己也算是一种成功吧。百度了一下各种博客，最后选了一个比较复杂的方式 HEXO + GitHub，人生在于折腾~~~<br>开始配置有点折腾，后期维护也挺简单的，支持 Markdown 格式，顺便学习一下 Markdown，一举多得！</p>
-<h2 id="HEXO-GitHub-搭建博客"><a href="#HEXO-GitHub-搭建博客" class="headerlink" title="HEXO + GitHub 搭建博客"></a>HEXO + GitHub 搭建博客</h2><h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a><br>作用：用来生成静态页面。</p>
-<h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p><a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>作用：把本地的 HEXO 内容提交到 Github 上去。</p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>Hexo 的介绍官网很详细：<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></p>
-<ol>
-<li><p>新建一个文件夹 Blog，用于存放 Hexo 配置文件，然后进入该文件夹</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /Users/xiaoqi/Blog</div><div class="line"><span class="built_in">cd</span> /Users/xiaoqi/Blog</div></pre></td></tr></table></figure>
-</li>
-<li><p>安装 Hexo：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
-</li>
-<li><p>初始化 Hexo：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
-</li>
-<li><p>启动 Hexo 服务：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>在浏览器中打开 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 可以看到 Hexo 页面就表示安装成功了</p>
-<h3 id="配置-GitHub"><a href="#配置-GitHub" class="headerlink" title="配置 GitHub"></a>配置 GitHub</h3><ol>
-<li>申请 GitHub 帐号，我的帐号是 sevendad</li>
-<li>建立 Repository，名称为 <strong>sevendad.github.io</strong></li>
-<li><p>将 Blog 目录下的 <strong>_config.yml</strong> 文件结尾更改为<br>deploy:<br>type: git<br>repository: <a href="https://github.com/sevendad/sevendad.github.io.git" target="_blank" rel="external">https://github.com/sevendad/sevendad.github.io.git</a><br>branch: master</p>
-</li>
-<li><p>然后执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>最后执行配置命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>在浏览器中打开 <a href="https://sevendad.github.io">https://sevendad.github.io</a> 就可以看到自己的博客页面了</p>
-<h3 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h3><p>每次部署的步骤，可按以下三步来进行。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://sevendad.github.io/2017-07-16/buildblog/" data-id="cj56emxpc00033dxg6j149zn7" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HEXO-GitHub/">HEXO,GitHub</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
